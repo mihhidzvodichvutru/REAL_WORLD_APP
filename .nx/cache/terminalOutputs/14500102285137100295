@@ -1,0 +1,558 @@
+
+ [31m>[39m [0m[7m[1m[31m NX [39m[22m[27m[0m  [31mAn error occured while creating pruned lockfile[39m
+
+   Please open an issue at `https://github.com/nrwl/nx/issues/new?template=1-bug.yml` and provide a reproduction.
+   To prevent the build from breaking we are returning the root lock file.
+   If you run `pnpm install --lockfile-only` in your output folder it will regenerate the correct pruned lockfile.
+   
+Original error: Pruned lock file creation failed. The following package was not found in the root lock file: @ngneat/falso@^7.1.1
+
+
+   Error: Pruned lock file creation failed. The following package was not found in the root lock file: @ngneat/falso@^7.1.1
+    at F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\nx@17.2.6_@swc-node+registe_00d40e4206ee38b107d03847c897f730\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:45:19
+    at Array.forEach (<anonymous>)
+    at normalizeDependencies (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\nx@17.2.6_@swc-node+registe_00d40e4206ee38b107d03847c897f730\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:31:42)
+    at pruneProjectGraph (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\nx@17.2.6_@swc-node+registe_00d40e4206ee38b107d03847c897f730\node_modules\nx\src\plugins\js\lock-file\project-graph-pruning.js:13:34)
+    at createLockFile (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\nx@17.2.6_@swc-node+registe_00d40e4206ee38b107d03847c897f730\node_modules\nx\src\plugins\js\lock-file\lock-file.js:129:79)
+    at updatePackageJson (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\@nx+js@17.2.6_@babel+traver_c673efed69fa4dcaaa35c1e995292360\node_modules\@nx\js\src\utils\package-json\update-package-json.js:44:57)
+    at copyPackageJson (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\@nx+js@17.2.6_@babel+traver_c673efed69fa4dcaaa35c1e995292360\node_modules\@nx\js\src\utils\package-json\index.js:22:53)
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+    at async esbuildExecutor (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\@nx+esbuild@17.2.6_@babel+t_c685be0918295fda8a45fc12826369df\node_modules\@nx\esbuild\src\executors\esbuild\esbuild.impl.js:65:29)
+    at async F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\@nx+js@17.2.6_@babel+traver_c673efed69fa4dcaaa35c1e995292360\node_modules\@nx\js\src\executors\node\node.impl.js:191:31
+
+[ [32mwatch[39m ] build succeeded, watching for changes...
+[1m[31mStarting inspector on localhost:9229 failed: address already in use[39m[22m
+[1m[31m[39m[22m
+[1m[31mError: listen EADDRINUSE: address already in use :::3000[39m[22m
+[1m[31m    at Server.setupListenHandle [as _listen2] (node:net:1940:16)[39m[22m
+[1m[31m    at listenInCluster (node:net:1997:12)[39m[22m
+[1m[31m    at Server.listen (node:net:2102:7)[39m[22m
+[1m[31m    at app.listen (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\express@4.18.3\node_modules\express\lib\application.js:635:24)[39m[22m
+[1m[31m    at Object.<anonymous> (F:\REAL_WORLD_APP\node-express-realworld-example-app\src\main.ts:55:5)[39m[22m
+[1m[31m    at Module._compile (node:internal/modules/cjs/loader:1761:14)[39m[22m
+[1m[31m    at Object..js (node:internal/modules/cjs/loader:1893:10)[39m[22m
+[1m[31m    at Module.load (node:internal/modules/cjs/loader:1481:32)[39m[22m
+[1m[31m    at Module.<anonymous> (node:internal/modules/cjs/loader:1300:12)[39m[22m
+[1m[31m    at Module._load (F:\REAL_WORLD_APP\node-express-realworld-example-app\node_modules\.pnpm\@nx+js@17.2.6_@babel+traver_c673efed69fa4dcaaa35c1e995292360\node_modules\@nx\js\src\executors\node\node-with-require-overrides.js:18:31)[39m[22m
+[1m[31m[39m[22m
+
+[36m>[39m [7m[1m[36m NX [39m[22m[27m [1mProcess exited with code 1, waiting for changes to restart...[22m
+
+[31m[1merror[22m[39m [90mTS5095[39m: Option 'bundler' can only be used when 'module' is set to 'es2015' or later.
+
+
+[4m[34msrc\app\routes\article\article.controller.ts:53:9[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 51 | [39m        [33mNumber[39m(req[33m.[39mquery[33m.[39moffset)[33m,[39m[0m
+[0m [90m 52 | [39m        [33mNumber[39m(req[33m.[39mquery[33m.[39mlimit)[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 53 | [39m        req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid[33m,[39m[0m
+[0m [90m    | [39m        [31m[1m^[22m[39m[0m
+[0m [90m 54 | [39m      )[33m;[39m[0m
+[0m [90m 55 | [39m      res[33m.[39mjson(result)[33m;[39m[0m
+[0m [90m 56 | [39m    } [36mcatch[39m (error) {[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:73:59[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 71 | [39mrouter[33m.[39mpost([32m'/articles'[39m[33m,[39m auth[33m.[39mrequired[33m,[39m async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 72 | [39m  [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 73 | [39m    [36mconst[39m article [33m=[39m await createArticle(req[33m.[39mbody[33m.[39marticle[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m    | [39m                                                          [31m[1m^[22m[39m[0m
+[0m [90m 74 | [39m    res[33m.[39mstatus([35m201[39m)[33m.[39mjson({ article })[33m;[39m[0m
+[0m [90m 75 | [39m  } [36mcatch[39m (error) {[0m
+[0m [90m 76 | [39m    next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:115:78[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 113 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 114 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 115 | [39m      [36mconst[39m article [33m=[39m await updateArticle(req[33m.[39mbody[33m.[39marticle[33m,[39m req[33m.[39mparams[33m.[39mslug[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                                                             [31m[1m^[22m[39m[0m
+[0m [90m 116 | [39m      res[33m.[39mjson({ article })[33m;[39m[0m
+[0m [90m 117 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 118 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:134:44[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 132 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 133 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 134 | [39m      await deleteArticle(req[33m.[39mparams[33m.[39mslug[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m![39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                           [31m[1m^[22m[39m[0m
+[0m [90m 135 | [39m      res[33m.[39msendStatus([35m204[39m)[33m;[39m[0m
+[0m [90m 136 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 137 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:175:80[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 173 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 174 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 175 | [39m      [36mconst[39m comment [33m=[39m await addComment(req[33m.[39mbody[33m.[39mcomment[33m.[39mbody[33m,[39m req[33m.[39mparams[33m.[39mslug[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                                                               [31m[1m^[22m[39m[0m
+[0m [90m 176 | [39m      res[33m.[39mjson({ comment })[33m;[39m[0m
+[0m [90m 177 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 178 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:195:50[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 193 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 194 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 195 | [39m      await deleteComment([33mNumber[39m(req[33m.[39mparams[33m.[39mid)[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                                 [31m[1m^[22m[39m[0m
+[0m [90m 196 | [39m      res[33m.[39mstatus([35m200[39m)[33m.[39mjson({})[33m;[39m[0m
+[0m [90m 197 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 198 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:215:62[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 213 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 214 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 215 | [39m      [36mconst[39m article [33m=[39m await favoriteArticle(req[33m.[39mparams[33m.[39mslug[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                                             [31m[1m^[22m[39m[0m
+[0m [90m 216 | [39m      res[33m.[39mjson({ article })[33m;[39m[0m
+[0m [90m 217 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 218 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\article\article.controller.ts:235:64[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 233 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 234 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 235 | [39m      [36mconst[39m article [33m=[39m await unfavoriteArticle(req[33m.[39mparams[33m.[39mslug[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m     | [39m                                                               [31m[1m^[22m[39m[0m
+[0m [90m 236 | [39m      res[33m.[39mjson({ article })[33m;[39m[0m
+[0m [90m 237 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 238 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\auth\auth.controller.ts:47:39[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 45 | [39mrouter[33m.[39mget([32m'/user'[39m[33m,[39m auth[33m.[39mrequired[33m,[39m async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 46 | [39m  [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 47 | [39m    [36mconst[39m user [33m=[39m await getCurrentUser(req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m    | [39m                                      [31m[1m^[22m[39m[0m
+[0m [90m 48 | [39m    res[33m.[39mjson({ user })[33m;[39m[0m
+[0m [90m 49 | [39m  } [36mcatch[39m (error) {[0m
+[0m [90m 50 | [39m    next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\auth\auth.controller.ts:63:50[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 61 | [39mrouter[33m.[39mput([32m'/user'[39m[33m,[39m auth[33m.[39mrequired[33m,[39m async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 62 | [39m  [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 63 | [39m    [36mconst[39m user [33m=[39m await updateUser(req[33m.[39mbody[33m.[39muser[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m    | [39m                                                 [31m[1m^[22m[39m[0m
+[0m [90m 64 | [39m    res[33m.[39mjson({ user })[33m;[39m[0m
+[0m [90m 65 | [39m  } [36mcatch[39m (error) {[0m
+[0m [90m 66 | [39m    next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\auth\auth.ts:17:5[39m[24m - [31m[1merror[22m[39m [90mTS2322[39m: Type '(req: express.Request) => string | null' is not assignable to type 'TokenGetter'.
+  Type 'string | null' is not assignable to type 'string | Promise<string> | undefined'.
+    Type 'null' is not assignable to type 'string | Promise<string> | undefined'.
+
+[0m [90m 15 | [39m  required[33m:[39m jwt({[0m
+[0m [90m 16 | [39m    secret[33m:[39m process[33m.[39menv[33m.[39m[33mJWT_SECRET[39m [33m||[39m [32m'superSecret'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 17 | [39m    getToken[33m:[39m getTokenFromHeaders[33m,[39m[0m
+[0m [90m    | [39m    [31m[1m^[22m[39m[0m
+[0m [90m 18 | [39m    algorithms[33m:[39m [[32m'HS256'[39m][33m,[39m[0m
+[0m [90m 19 | [39m  })[33m,[39m[0m
+[0m [90m 20 | [39m  optional[33m:[39m jwt({[0m
+
+[4m[34msrc\app\routes\auth\auth.ts:23:5[39m[24m - [31m[1merror[22m[39m [90mTS2322[39m: Type '(req: express.Request) => string | null' is not assignable to type 'TokenGetter'.
+
+[0m [90m 21 | [39m    secret[33m:[39m process[33m.[39menv[33m.[39m[33mJWT_SECRET[39m [33m||[39m [32m'superSecret'[39m[33m,[39m[0m
+[0m [90m 22 | [39m    credentialsRequired[33m:[39m [36mfalse[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 23 | [39m    getToken[33m:[39m getTokenFromHeaders[33m,[39m[0m
+[0m [90m    | [39m    [31m[1m^[22m[39m[0m
+[0m [90m 24 | [39m    algorithms[33m:[39m [[32m'HS256'[39m][33m,[39m[0m
+[0m [90m 25 | [39m  })[33m,[39m[0m
+[0m [90m 26 | [39m}[33m;[39m[0m
+
+[4m[34msrc\app\routes\auth\token.utils.ts:1:22[39m[24m - [31m[1merror[22m[39m [90mTS7016[39m: Could not find a declaration file for module 'jsonwebtoken'. 'F:/REAL_WORLD_APP/node-express-realworld-example-app/node_modules/.pnpm/jsonwebtoken@9.0.3/node_modules/jsonwebtoken/index.js' implicitly has an 'any' type.
+  If the 'jsonwebtoken' package actually exposes this module, consider sending a pull request to amend 'https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/jsonwebtoken'
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m [33m*[39m as jwt from [32m'jsonwebtoken'[39m[33m;[39m[0m
+[0m [90m   | [39m                     [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[0m
+[0m [90m 3 | [39m[36mconst[39m generateToken [33m=[39m (id[33m:[39m number)[33m:[39m string [33m=>[39m[0m
+[0m [90m 4 | [39m  jwt[33m.[39msign({ user[33m:[39m { id } }[33m,[39m process[33m.[39menv[33m.[39m[33mJWT_SECRET[39m [33m||[39m [32m'superSecret'[39m[33m,[39m {[0m
+
+[4m[34msrc\app\routes\profile\profile.controller.ts:39:62[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 37 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 38 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 39 | [39m      [36mconst[39m profile [33m=[39m await followUser(req[33m.[39mparams[33m?[39m[33m.[39musername[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m    | [39m                                                             [31m[1m^[22m[39m[0m
+[0m [90m 40 | [39m      res[33m.[39mjson({ profile })[33m;[39m[0m
+[0m [90m 41 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 42 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\app\routes\profile\profile.controller.ts:59:63[39m[24m - [31m[1merror[22m[39m [90mTS2345[39m: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+
+[0m [90m 57 | [39m  async (req[33m:[39m [33mRequest[39m[33m,[39m res[33m:[39m [33mResponse[39m[33m,[39m next[33m:[39m [33mNextFunction[39m) [33m=>[39m {[0m
+[0m [90m 58 | [39m    [36mtry[39m {[0m
+[0m[31m[1m>[22m[39m[90m 59 | [39m      [36mconst[39m profile [33m=[39m await unfollowUser(req[33m.[39mparams[33m.[39musername[33m,[39m req[33m.[39mauth[33m?[39m[33m.[39muser[33m?[39m[33m.[39mid)[33m;[39m[0m
+[0m [90m    | [39m                                                              [31m[1m^[22m[39m[0m
+[0m [90m 60 | [39m      res[33m.[39mjson({ profile })[33m;[39m[0m
+[0m [90m 61 | [39m    } [36mcatch[39m (error) {[0m
+[0m [90m 62 | [39m      next(error)[33m;[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:1:34[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { computed[33m,[39m ref[33m,[39m watch } from [32m'vue'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { useRoute } from [32m'vue-router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mAppRouteNames[39m } from [32m'src/router'[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:2:38[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { computed[33m,[39m ref[33m,[39m watch } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                     [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { useRoute } from [32m'vue-router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mAppRouteNames[39m } from [32m'src/router'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { api[33m,[39m pageToOffset } from [32m'src/services'[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:3:26[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue-router' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { computed[33m,[39m ref[33m,[39m watch } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m { useRoute } from [32m'vue-router'[39m[0m
+[0m [90m   | [39m                         [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mAppRouteNames[39m } from [32m'src/router'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { api[33m,[39m pageToOffset } from [32m'src/services'[39m[0m
+[0m [90m 6 | [39m[36mimport[39m type { [33mArticle[39m } from [32m'src/services/api'[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:112:5[39m[24m - [31m[1merror[22m[39m [90mTS7006[39m: Parameter 'routeName' implicitly has an 'any' type.
+
+[0m [90m 110 | [39m  watch([0m
+[0m [90m 111 | [39m    () [33m=>[39m route[33m.[39mname[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 112 | [39m    routeName [33m=>[39m {[0m
+[0m [90m     | [39m    [31m[1m^[22m[39m[0m
+[0m [90m 113 | [39m      [36mconst[39m possibleArticlesType [33m=[39m routeNameToArticlesType[routeName as [33mAppRouteNames[39m][0m
+[0m [90m 114 | [39m      [36mif[39m ([33m![39misArticlesType(possibleArticlesType))[0m
+[0m [90m 115 | [39m        [36mreturn[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:124:5[39m[24m - [31m[1merror[22m[39m [90mTS7006[39m: Parameter 'usernameParam' implicitly has an 'any' type.
+
+[0m [90m 122 | [39m  watch([0m
+[0m [90m 123 | [39m    () [33m=>[39m route[33m.[39mparams[33m.[39musername[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 124 | [39m    usernameParam [33m=>[39m {[0m
+[0m [90m     | [39m    [31m[1m^[22m[39m[0m
+[0m [90m 125 | [39m      [36mif[39m (usernameParam [33m!==[39m username[33m.[39mvalue)[0m
+[0m [90m 126 | [39m        username[33m.[39mvalue [33m=[39m [36mtypeof[39m usernameParam [33m===[39m [32m'string'[39m [33m?[39m usernameParam [33m:[39m [32m''[39m[0m
+[0m [90m 127 | [39m    }[33m,[39m[0m
+
+[4m[34msrc\composable\use-articles.ts:133:5[39m[24m - [31m[1merror[22m[39m [90mTS7006[39m: Parameter 'tagParam' implicitly has an 'any' type.
+
+[0m [90m 131 | [39m  watch([0m
+[0m [90m 132 | [39m    () [33m=>[39m route[33m.[39mparams[33m.[39mtag[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 133 | [39m    tagParam [33m=>[39m {[0m
+[0m [90m     | [39m    [31m[1m^[22m[39m[0m
+[0m [90m 134 | [39m      [36mif[39m (tagParam [33m!==[39m tag[33m.[39mvalue)[0m
+[0m [90m 135 | [39m        tag[33m.[39mvalue [33m=[39m [36mtypeof[39m tagParam [33m===[39m [32m'string'[39m [33m?[39m tagParam [33m:[39m [32m''[39m[0m
+[0m [90m 136 | [39m    }[33m,[39m[0m
+
+[4m[34msrc\composable\use-favorite-article.ts:1:34[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m type { [33mArticle[39m } from [32m'src/services/api'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m useAsync from [32m'src/utils/use-async'[39m[0m
+
+[4m[34msrc\composable\use-follow-profile.ts:1:34[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m type { [33mProfile[39m } from [32m'src/services/api'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m useAsync from [32m'src/utils/use-async'[39m[0m
+
+[4m[34msrc\composable\use-profile.ts:1:34[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { ref[33m,[39m watch } from [32m'vue'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mProfile[39m } from [32m'src/services/api'[39m[0m
+
+[4m[34msrc\composable\use-profile.ts:2:28[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m type { [33mComputedRef[39m } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { ref[33m,[39m watch } from [32m'vue'[39m[0m
+[0m [90m   | [39m                           [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mProfile[39m } from [32m'src/services/api'[39m[0m
+[0m [90m 5 | [39m[0m
+
+[4m[34msrc\composable\use-tags.ts:1:21[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { ref } from [32m'vue'[39m[0m
+[0m [90m   | [39m                    [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39m[36mexport[39m [36mfunction[39m useTags() {[0m
+
+[4m[34msrc\config.ts:2:20[39m[24m - [31m[1merror[22m[39m [90mTS1343[39m: The 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', or 'nodenext'.
+
+[0m [90m 1 | [39m[36mexport[39m [36mconst[39m [33mCONFIG[39m [33m=[39m {[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m  [33mAPI_HOST[39m[33m:[39m [33mString[39m([36mimport[39m[33m.[39mmeta[33m.[39menv[33m.[39m[33mVITE_API_HOST[39m) [33m||[39m [32m''[39m[33m,[39m[0m
+[0m [90m   | [39m                   [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m}[0m
+[0m [90m 4 | [39m[0m
+
+[4m[34msrc\main.ts:1:27[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { createApp } from [32m'vue'[39m[0m
+[0m [90m   | [39m                          [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { createPinia } from [32m'pinia'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m [33mApp[39m from [32m'./App.vue'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m registerGlobalComponents from [32m'./plugins/global-components'[39m[0m
+
+[4m[34msrc\main.ts:2:29[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'pinia' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m { createApp } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { createPinia } from [32m'pinia'[39m[0m
+[0m [90m   | [39m                            [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m [33mApp[39m from [32m'./App.vue'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m registerGlobalComponents from [32m'./plugins/global-components'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m setAuthorizationToken from [32m'./plugins/set-authorization-token'[39m[0m
+
+[4m[34msrc\plugins\global-components.ts:1:26[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mApp[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                         [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m [33mAppLink[39m from [32m'src/components/AppLink.vue'[39m[0m
+[0m [90m 3 | [39m[0m
+[0m [90m 4 | [39m[36mexport[39m [36mdefault[39m [36mfunction[39m registerGlobalComponents(app[33m:[39m [33mApp[39m)[33m:[39m [36mvoid[39m {[0m
+
+[4m[34msrc\plugins\marked.ts:3:24[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'marked' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[90m/* eslint-disable antfu/consistent-list-newline */[39m[0m
+[0m [90m 2 | [39m[36mimport[39m insane from [32m'insane'[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m { marked } from [32m'marked'[39m[0m
+[0m [90m   | [39m                       [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[0m
+[0m [90m 5 | [39m[36mfunction[39m renderMarkdown(markdown[33m?[39m[33m:[39m string)[33m:[39m string {[0m
+[0m [90m 6 | [39m  [36mif[39m ([33m![39mmarkdown) [36mreturn[39m [32m''[39m[0m
+
+[4m[34msrc\router.ts:1:50[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue-router' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mRouteParams[39m[33m,[39m [33mRouteRecordRaw[39m } from [32m'vue-router'[39m[0m
+[0m [90m   | [39m                                                 [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { createRouter[33m,[39m createWebHashHistory } from [32m'vue-router'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { isAuthorized } from [32m'./store/user'[39m[0m
+[0m [90m 4 | [39m[0m
+
+[4m[34msrc\router.ts:2:52[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue-router' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m type { [33mRouteParams[39m[33m,[39m [33mRouteRecordRaw[39m } from [32m'vue-router'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { createRouter[33m,[39m createWebHashHistory } from [32m'vue-router'[39m[0m
+[0m [90m   | [39m                                                   [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { isAuthorized } from [32m'./store/user'[39m[0m
+[0m [90m 4 | [39m[0m
+[0m [90m 5 | [39m[36mexport[39m type [33mAppRouteNames[39m[0m
+
+[4m[34msrc\store\user.ts:1:31[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { computed[33m,[39m ref } from [32m'vue'[39m[0m
+[0m [90m   | [39m                              [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { defineStore } from [32m'pinia'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mUser[39m } from [32m'src/services/api'[39m[0m
+
+[4m[34msrc\store\user.ts:2:29[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'pinia' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m { computed[33m,[39m ref } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { defineStore } from [32m'pinia'[39m[0m
+[0m [90m   | [39m                            [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { api } from [32m'src/services'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m type { [33mUser[39m } from [32m'src/services/api'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m [33mStorage[39m from [32m'src/utils/storage'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:1:46[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m { defineComponent[33m,[39m h[33m,[39m [33mSuspense[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                                             [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m type { [33mRouteLocationRaw[39m[33m,[39m [33mRouter[39m } from [32m'vue-router'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { createMemoryHistory[33m,[39m createRouter } from [32m'vue-router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:2:47[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue-router' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m { defineComponent[33m,[39m h[33m,[39m [33mSuspense[39m } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m type { [33mRouteLocationRaw[39m[33m,[39m [33mRouter[39m } from [32m'vue-router'[39m[0m
+[0m [90m   | [39m                                              [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { createMemoryHistory[33m,[39m createRouter } from [32m'vue-router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:3:51[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue-router' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m { defineComponent[33m,[39m h[33m,[39m [33mSuspense[39m } from [32m'vue'[39m[0m
+[0m [90m 2 | [39m[36mimport[39m type { [33mRouteLocationRaw[39m[33m,[39m [33mRouter[39m } from [32m'vue-router'[39m[0m
+[0m[31m[1m>[22m[39m[90m 3 | [39m[36mimport[39m { createMemoryHistory[33m,[39m createRouter } from [32m'vue-router'[39m[0m
+[0m [90m   | [39m                                                  [31m[1m^[22m[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+[0m [90m 6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:4:36[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '@pinia/testing' or its corresponding type declarations.
+
+[0m [90m 2 | [39m[36mimport[39m type { [33mRouteLocationRaw[39m[33m,[39m [33mRouter[39m } from [32m'vue-router'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { createMemoryHistory[33m,[39m createRouter } from [32m'vue-router'[39m[0m
+[0m[31m[1m>[22m[39m[90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+[0m [90m   | [39m                                   [31m[1m^[22m[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+[0m [90m 6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+[0m [90m 7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:5:53[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'msw' or its corresponding type declarations.
+
+[0m [90m 3 | [39m[36mimport[39m { createMemoryHistory[33m,[39m createRouter } from [32m'vue-router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+[0m[31m[1m>[22m[39m[90m 5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+[0m [90m   | [39m                                                    [31m[1m^[22m[39m[0m
+[0m [90m 6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+[0m [90m 7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+[0m [90m 8 | [39m[36mimport[39m { afterAll[33m,[39m afterEach[33m,[39m beforeAll } from [32m'vitest'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:6:34[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'msw/node' or its corresponding type declarations.
+
+[0m [90m 4 | [39m[36mimport[39m { createTestingPinia } from [32m'@pinia/testing'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+[0m[31m[1m>[22m[39m[90m 6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+[0m [90m   | [39m                                 [31m[1m^[22m[39m[0m
+[0m [90m 7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+[0m [90m 8 | [39m[36mimport[39m { afterAll[33m,[39m afterEach[33m,[39m beforeAll } from [32m'vitest'[39m[0m
+[0m [90m 9 | [39m[36mimport[39m type { [33mRenderOptions[39m } from [32m'@testing-library/vue'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:7:29[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'msw/node' or its corresponding type declarations.
+
+[0m [90m  5 | [39m[36mimport[39m { http[33m,[39m [33mHttpResponse[39m[33m,[39m matchRequestUrl } from [32m'msw'[39m[0m
+[0m [90m  6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+[0m[31m[1m>[22m[39m[90m  7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+[0m [90m    | [39m                            [31m[1m^[22m[39m[0m
+[0m [90m  8 | [39m[36mimport[39m { afterAll[33m,[39m afterEach[33m,[39m beforeAll } from [32m'vitest'[39m[0m
+[0m [90m  9 | [39m[36mimport[39m type { [33mRenderOptions[39m } from [32m'@testing-library/vue'[39m[0m
+[0m [90m 10 | [39m[36mimport[39m [33mAppLink[39m from [32m'src/components/AppLink.vue'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:8:48[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vitest' or its corresponding type declarations.
+
+[0m [90m  6 | [39m[36mimport[39m type { [33mSetupServer[39m } from [32m'msw/node'[39m[0m
+[0m [90m  7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+[0m[31m[1m>[22m[39m[90m  8 | [39m[36mimport[39m { afterAll[33m,[39m afterEach[33m,[39m beforeAll } from [32m'vitest'[39m[0m
+[0m [90m    | [39m                                               [31m[1m^[22m[39m[0m
+[0m [90m  9 | [39m[36mimport[39m type { [33mRenderOptions[39m } from [32m'@testing-library/vue'[39m[0m
+[0m [90m 10 | [39m[36mimport[39m [33mAppLink[39m from [32m'src/components/AppLink.vue'[39m[0m
+[0m [90m 11 | [39m[36mimport[39m { routes } from [32m'src/router'[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:9:36[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module '@testing-library/vue' or its corresponding type declarations.
+
+[0m [90m  7 | [39m[36mimport[39m { setupServer } from [32m'msw/node'[39m[0m
+[0m [90m  8 | [39m[36mimport[39m { afterAll[33m,[39m afterEach[33m,[39m beforeAll } from [32m'vitest'[39m[0m
+[0m[31m[1m>[22m[39m[90m  9 | [39m[36mimport[39m type { [33mRenderOptions[39m } from [32m'@testing-library/vue'[39m[0m
+[0m [90m    | [39m                                   [31m[1m^[22m[39m[0m
+[0m [90m 10 | [39m[36mimport[39m [33mAppLink[39m from [32m'src/components/AppLink.vue'[39m[0m
+[0m [90m 11 | [39m[36mimport[39m { routes } from [32m'src/router'[39m[0m
+[0m [90m 12 | [39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:93:42[39m[24m - [31m[1merror[22m[39m [90mTS7031[39m: Binding element 'request' implicitly has an 'any' type.
+
+[0m [90m 91 | [39m[0m
+[0m [90m 92 | [39m  [36mconst[39m result [33m=[39m await [36mnew[39m [33mPromise[39m[33m<[39m[33mRequest[39m[33m>[39m((resolve[33m,[39m reject) [33m=>[39m {[0m
+[0m[31m[1m>[22m[39m[90m 93 | [39m    server[33m.[39mevents[33m.[39mon([32m'request:match'[39m[33m,[39m ({ request[33m,[39m requestId }) [33m=>[39m {[0m
+[0m [90m    | [39m                                         [31m[1m^[22m[39m[0m
+[0m [90m 94 | [39m      [36mconst[39m matchesMethod [33m=[39m request[33m.[39mmethod[33m.[39mtoLowerCase() [33m===[39m method[33m.[39mtoLowerCase()[0m
+[0m [90m 95 | [39m      [36mconst[39m matchesUrl [33m=[39m matchRequestUrl([36mnew[39m [33mURL[39m(request[33m.[39murl)[33m,[39m url)[0m
+[0m [90m 96 | [39m      [36mif[39m (matchesMethod [33m&&[39m matchesUrl) {[0m
+
+[4m[34msrc\utils\test\test.utils.ts:93:51[39m[24m - [31m[1merror[22m[39m [90mTS7031[39m: Binding element 'requestId' implicitly has an 'any' type.
+
+[0m [90m 91 | [39m[0m
+[0m [90m 92 | [39m  [36mconst[39m result [33m=[39m await [36mnew[39m [33mPromise[39m[33m<[39m[33mRequest[39m[33m>[39m((resolve[33m,[39m reject) [33m=>[39m {[0m
+[0m[31m[1m>[22m[39m[90m 93 | [39m    server[33m.[39mevents[33m.[39mon([32m'request:match'[39m[33m,[39m ({ request[33m,[39m requestId }) [33m=>[39m {[0m
+[0m [90m    | [39m                                                  [31m[1m^[22m[39m[0m
+[0m [90m 94 | [39m      [36mconst[39m matchesMethod [33m=[39m request[33m.[39mmethod[33m.[39mtoLowerCase() [33m===[39m method[33m.[39mtoLowerCase()[0m
+[0m [90m 95 | [39m      [36mconst[39m matchesUrl [33m=[39m matchRequestUrl([36mnew[39m [33mURL[39m(request[33m.[39murl)[33m,[39m url)[0m
+[0m [90m 96 | [39m      [36mif[39m (matchesMethod [33m&&[39m matchesUrl) {[0m
+
+[4m[34msrc\utils\test\test.utils.ts:102:55[39m[24m - [31m[1merror[22m[39m [90mTS7031[39m: Binding element 'reqId' implicitly has an 'any' type.
+
+[0m [90m 100 | [39m    })[0m
+[0m [90m 101 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 102 | [39m    server[33m.[39mevents[33m.[39mon([32m'response:mocked'[39m[33m,[39m ({ requestId[33m:[39m reqId }) [33m=>[39m {[0m
+[0m [90m     | [39m                                                      [31m[1m^[22m[39m[0m
+[0m [90m 103 | [39m      [36mif[39m (reqId [33m===[39m expectedRequestId) resolve(expectedRequest)[0m
+[0m [90m 104 | [39m    })[0m
+[0m [90m 105 | [39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:106:55[39m[24m - [31m[1merror[22m[39m [90mTS7031[39m: Binding element 'req' implicitly has an 'any' type.
+
+[0m [90m 104 | [39m    })[0m
+[0m [90m 105 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 106 | [39m    server[33m.[39mevents[33m.[39mon([32m'request:unhandled'[39m[33m,[39m ({ request[33m:[39m req[33m,[39m requestId[33m:[39m reqId }) [33m=>[39m {[0m
+[0m [90m     | [39m                                                      [31m[1m^[22m[39m[0m
+[0m [90m 107 | [39m      [36mif[39m (reqId [33m===[39m expectedRequestId)[0m
+[0m [90m 108 | [39m        reject([36mnew[39m [33mError[39m([32m`The ${req.method} ${req.url} request was unhandled.`[39m))[0m
+[0m [90m 109 | [39m    })[0m
+
+[4m[34msrc\utils\test\test.utils.ts:106:71[39m[24m - [31m[1merror[22m[39m [90mTS7031[39m: Binding element 'reqId' implicitly has an 'any' type.
+
+[0m [90m 104 | [39m    })[0m
+[0m [90m 105 | [39m[0m
+[0m[31m[1m>[22m[39m[90m 106 | [39m    server[33m.[39mevents[33m.[39mon([32m'request:unhandled'[39m[33m,[39m ({ request[33m:[39m req[33m,[39m requestId[33m:[39m reqId }) [33m=>[39m {[0m
+[0m [90m     | [39m                                                                      [31m[1m^[22m[39m[0m
+[0m [90m 107 | [39m      [36mif[39m (reqId [33m===[39m expectedRequestId)[0m
+[0m [90m 108 | [39m        reject([36mnew[39m [33mError[39m([32m`The ${req.method} ${req.url} request was unhandled.`[39m))[0m
+[0m [90m 109 | [39m    })[0m
+
+[4m[34msrc\utils\test\test.utils.ts:164:39[39m[24m - [31m[1merror[22m[39m [90mTS1343[39m: The 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', or 'nodenext'.
+
+[0m [90m 162 | [39m      let [method[33m,[39m path[33m,[39m status[33m,[39m response] [33m=[39m parseArgs(args)[0m
+[0m [90m 163 | [39m      method [33m=[39m method[33m.[39mtoLowerCase()[0m
+[0m[31m[1m>[22m[39m[90m 164 | [39m      [36mreturn[39m http[method as [32m'all'[39m]([32m`${import.meta.env.VITE_API_HOST}${path}`[39m[33m,[39m () [33m=>[39m {[0m
+[0m [90m     | [39m                                      [31m[1m^[22m[39m[0m
+[0m [90m 165 | [39m        [36mreturn[39m [33mHttpResponse[39m[33m.[39mjson(response[33m,[39m { status })[0m
+[0m [90m 166 | [39m      })[0m
+[0m [90m 167 | [39m    })[33m,[39m[0m
+
+[4m[34msrc\utils\test\test.utils.ts:197:41[39m[24m - [31m[1merror[22m[39m [90mTS1343[39m: The 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', or 'nodenext'.
+
+[0m [90m 195 | [39m        let [method[33m,[39m path[33m,[39m status[33m,[39m response] [33m=[39m parseArgs(args)[0m
+[0m [90m 196 | [39m        method [33m=[39m method[33m.[39mtoLowerCase()[0m
+[0m[31m[1m>[22m[39m[90m 197 | [39m        [36mreturn[39m http[method as [32m'all'[39m]([32m`${import.meta.env.VITE_API_HOST}${path}`[39m[33m,[39m () [33m=>[39m {[0m
+[0m [90m     | [39m                                        [31m[1m^[22m[39m[0m
+[0m [90m 198 | [39m          [36mreturn[39m [33mHttpResponse[39m[33m.[39mjson(response[33m,[39m { status })[0m
+[0m [90m 199 | [39m        })[0m
+[0m [90m 200 | [39m      })[33m,[39m[0m
+
+[4m[34msrc\utils\use-async.ts:1:26[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m[31m[1m>[22m[39m[90m 1 | [39m[36mimport[39m type { [33mRef[39m } from [32m'vue'[39m[0m
+[0m [90m   | [39m                         [31m[1m^[22m[39m[0m
+[0m [90m 2 | [39m[36mimport[39m { ref } from [32m'vue'[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { routerPush } from [32m'src/router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { isFetchError } from [32m'src/services'[39m[0m
+
+[4m[34msrc\utils\use-async.ts:2:21[39m[24m - [31m[1merror[22m[39m [90mTS2307[39m: Cannot find module 'vue' or its corresponding type declarations.
+
+[0m [90m 1 | [39m[36mimport[39m type { [33mRef[39m } from [32m'vue'[39m[0m
+[0m[31m[1m>[22m[39m[90m 2 | [39m[36mimport[39m { ref } from [32m'vue'[39m[0m
+[0m [90m   | [39m                    [31m[1m^[22m[39m[0m
+[0m [90m 3 | [39m[36mimport[39m { routerPush } from [32m'src/router'[39m[0m
+[0m [90m 4 | [39m[36mimport[39m { isFetchError } from [32m'src/services'[39m[0m
+[0m [90m 5 | [39m[36mimport[39m { userStorage } from [32m'src/store/user'[39m[0m
+
+Found 54 errors.
+[ [31mwatch[39m ] build finished with errors (see above), watching for changes...
+[1m[31mWatch error: Daemon closed the connection[39m[22m
